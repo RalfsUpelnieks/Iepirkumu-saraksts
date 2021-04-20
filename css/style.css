@@ -6,3 +6,49 @@ h1 {
 body {
     background-color: rgb(248, 210, 83);
 }
+
+#pogas {
+    display: flex;
+    justify-content: center;
+}
+
+#pievienotPreci{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(218, 157, 44);
+}
+
+#nodzestSarakstu{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(218, 157, 44);
+}
+
+#saraksts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    
+}
+.prece{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 20px;
+    width: 500px;
+    padding: 10px;
+    background-color: rgb(170, 111, 3);
+}
