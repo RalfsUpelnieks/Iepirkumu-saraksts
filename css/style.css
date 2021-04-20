@@ -67,11 +67,44 @@ body {
 }
 
 #pievienosanasPanelis {
+    position: relative;
     background-color: rgb(248, 223, 176);
     margin: 15% auto;
     padding: 10px;
     border: 2px solid black;
     border-radius: 15px;
     width: 600px;
+    height: auto;
 
+}
+
+#iziesanasPoga{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(218, 157, 44);
+    border-radius: 10px;
+}
+
+#precesNosaukums {
+    width: 180px;
+    height: 22px;
+}
+
+#daudzums {
+    width: 70px;
+    height: 22px;
+}
+
+#pievienotPreciSarakstam {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(218, 157, 44);
+}
+.dzest {
+    width: 50px;
+    height: 50px;
 }
