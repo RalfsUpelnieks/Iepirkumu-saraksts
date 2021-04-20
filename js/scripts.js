@@ -9,7 +9,6 @@ document.getElementById('pievienotPreci').addEventListener('click', () => {
 
 document.getElementById('nodzestSarakstu').addEventListener('click', () => {
     preces = [];
-    render();
 })
 
 document.getElementById('iziesanasPoga').addEventListener('click', () => {
@@ -23,7 +22,7 @@ document.getElementById('pievienotPreciSarakstam').addEventListener('click', () 
     <div class="prece">
         <h3>Preces nosaukums: ${precesNosaukums.value}</h3>
         <h4>daudzums: ${daudzums.value}</h4>
-        <button class='dzest'></button>
+        <button class='dzest'>X</button>
     </div>`;
 
     saraksts.innerHTML += prece;
@@ -37,10 +36,7 @@ const saraksts = document.querySelector('#saraksts');
 
 saraksts.addEventListener('click', function(e){
     if(e.target.className == 'dzest'){
-        var precesNummurs = e.target.id.substring(5);
-        console.log(precesNummurs);
-        console.log(preces);
-        preces.splice(precesNummurs, precesNummurs);
-        render();
+        const vecaks = e.target.parentElement;
+            saraksts.removeChild(vecaks)
     }
 })
