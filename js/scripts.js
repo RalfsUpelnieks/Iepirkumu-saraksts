@@ -1,6 +1,5 @@
 const PANELIS = document.getElementById('panelis');
-let preces = [];
-var precesNummurs = 0;
+const SARAKSTS = document.getElementById('saraksts');
 
 document.getElementById('pievienotPreci').addEventListener('click', () => {
     PANELIS.style.display = 'block';
@@ -8,7 +7,7 @@ document.getElementById('pievienotPreci').addEventListener('click', () => {
 })
 
 document.getElementById('nodzestSarakstu').addEventListener('click', () => {
-    preces = [];
+   SARAKSTS.innerHTML = ''
 })
 
 document.getElementById('iziesanasPoga').addEventListener('click', () => {
@@ -20,12 +19,12 @@ document.getElementById('pievienotPreciSarakstam').addEventListener('click', () 
 
     let prece =`
     <div class="prece">
-        <h3>Preces nosaukums: ${precesNosaukums.value}</h3>
+        <h3 id='precesVards'>Preces nosaukums: ${precesNosaukums.value}</h3>
         <h4>daudzums: ${daudzums.value}</h4>
         <button class='dzest'>X</button>
     </div>`;
 
-    saraksts.innerHTML += prece;
+    SARAKSTS.innerHTML += prece;
     PANELIS.style.display = 'none';
 
     precesNosaukums.value = "";
@@ -37,6 +36,6 @@ const saraksts = document.querySelector('#saraksts');
 saraksts.addEventListener('click', function(e){
     if(e.target.className == 'dzest'){
         const vecaks = e.target.parentElement;
-            saraksts.removeChild(vecaks)
+            SARAKSTS.removeChild(vecaks)
     }
 })
